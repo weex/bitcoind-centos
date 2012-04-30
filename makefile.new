@@ -89,22 +89,26 @@ xCXXFLAGS=-pthread -Wextra -Wno-sign-compare -Wno-char-subscripts -Wno-invalid-o
     $(DEBUGFLAGS) $(DEFS) $(HARDENING) $(CXXFLAGS) $(INCLUDEPATHS) -static
 
 OBJS= \
-    obj/checkpoints.o \
-    obj/netbase.o \
-    obj/crypter.o \
-    obj/key.o \
-    obj/db.o \
-    obj/init.o \
-    obj/irc.o \
-    obj/keystore.o \
-    obj/main.o \
-    obj/net.o \
-    obj/protocol.o \
-    obj/bitcoinrpc.o \
-    obj/rpcdump.o \
-    obj/script.o \
-    obj/util.o \
-    obj/wallet.o
+  obj/checkpoints.o \
+  obj/version.o \
+  obj/addrman.o \
+  obj/netbase.o \
+  obj/crypter.o \
+  obj/key.o \
+  obj/db.o \
+  obj/init.o \
+  obj/irc.o \
+  obj/keystore.o \
+  obj/main.o \
+  obj/net.o \
+  obj/protocol.o \
+  obj/bitcoinrpc.o \
+  obj/rpcdump.o \
+  obj/script.o \
+  obj/util.o \
+  obj/wallet.o \
+  obj/walletdb.o \
+  obj/noui.o
 
 
 all: bitcoind
